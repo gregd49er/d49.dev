@@ -52,11 +52,16 @@ add_action( 'admin_head', 'efx_hide_publish_button_until' );
 function db_add_ef_post_type_support() {
 add_post_type_support('movie-review', 'ef_functionality');
 add_post_type_support('movie-review', 'ef_notifications');
-add_post_type_support('movie-review', 'ef_custom_statuses');
+
 add_post_type_support('movie-review', 'ef_editorial_metadata');
 add_post_type_support('movie-review', 'ef_calendar');
 add_post_type_support('movie-review', 'ef_editorial_comments');
 
+add_post_type_support('campus-voice', 'ef_functionality');
+add_post_type_support('campus-voice', 'ef_notifications');
+add_post_type_support('campus-voice', 'ef_editorial_metadata');
+add_post_type_support('campus-voice', 'ef_calendar');
+add_post_type_support('campus-voice', 'ef_editorial_comments');
 }
 add_action('init', 'db_add_ef_post_type_support');
 
