@@ -430,6 +430,7 @@ function create_post_type_html5()
             'post_tag',
             'category'
         ) // Add Category and Post Tags support
+
     ));
 }
 
@@ -448,5 +449,7 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 {
     return '<h2>' . $content . '</h2>';
 }
+
+
 
 ?>
